@@ -20,7 +20,7 @@ const ParticipantManager = () => {
   const [message, setMessage] = useState('');
   const [editMode, setEditMode] = useState(false);
 
-  const baseUrl = `${import.meta.env.VITE_API_URL}`; 
+  const baseUrl = `${import.meta.env.VITE_API_URL}/participantapi`; 
   //   const baseUrl = `${config.url}/participantapi`;
 
   useEffect(() => {
