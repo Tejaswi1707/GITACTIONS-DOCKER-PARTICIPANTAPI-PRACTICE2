@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './style.css';
-import config from './config.js';
+
 
 const ParticipantManager = () => {
   const [participants, setParticipants] = useState([]);
@@ -20,7 +20,7 @@ const ParticipantManager = () => {
   const [message, setMessage] = useState('');
   const [editMode, setEditMode] = useState(false);
 
-  const baseUrl = `${config.url}`; 
+  const baseUrl = `${import.meta.env.VITE_API_URL}`; 
   //   const baseUrl = `${config.url}/participantapi`;
 
   useEffect(() => {
